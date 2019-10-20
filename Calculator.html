@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1.0>
+	<style type="text/css">
+		tr,td{
+			border: none;
+			cursor: pointer;
+
+
+		}
+		td{
+			background:#ccc;
+			color: black;
+			text-align: center;
+			font-size: 20px;
+			padding: 10px;
+			border: 1px solid white;
+		}
+		td:hover{
+			background: #f5f5f5;
+		}
+		
+		table{
+			width: 40%;
+			margin: auto;
+			border: none;
+			box-shadow: 2px 3px 8px steelblue;
+			border-collapse: collapse;
+		}
+		input{
+			width: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			text-align: right;
+			font-size: 25px;
+			cursor: not-allowed;
+			border-radius: 7px;
+		 
+		}
+	</style>
+</head>
+<body>
+<table style="border: 1px solid">
+	<tr>
+		<td colspan="4"><input type="text" name="" id="result" value="0" disabled="disabled"></td>
+	</tr>
+	<tr>
+		<td id="ce">CE</td>
+		<td id="del" colspan="2">DEL</td>
+		<td id="mod">%</td>
+	</tr>
+	<tr>
+		<td id="one">1</td>
+		<td id="two">2</td>
+		<td id="three">3</td>
+		<td id="mul">*</td>
+	</tr>
+	<tr>
+		<td id="four">4</td>
+		<td id="five">5</td>
+		<td id="six">6</td>
+		<td id="div">/</td>
+	</tr>
+	<tr>
+		<td id="seven">7</td>
+		<td id="eight">8</td>
+		<td id="nine">9</td>
+		<td id="sub">-</td>
+	</tr>
+	<tr>
+		<td id="dot">.</td>
+		<td id="zero">0</td>
+		<td id="equal">=</td>
+		<td id="add">+</td>
+	</tr>
+	<tr><td colspan="4" id="oyin"><i>designed by : Oyindamola <br>
+	version 1.0</i> </td></tr>
+</table>
+<script type="text/javascript">
+	var firstValue= "";
+	var sign=""
+	var clear= document.getElementById('ce')
+	var del= document.getElementById('del')
+	var mod= document.getElementById('mod')
+	var one= document.getElementById('one')
+	var two= document.getElementById('two')
+	var three= document.getElementById('three')
+	var mul= document.getElementById('mul')
+	var four= document.getElementById('four')
+	var five= document.getElementById('five')
+	var six= document.getElementById('six')
+	var div= document.getElementById('div')
+	var seven= document.getElementById('seven')
+	var eight= document.getElementById('eight')
+	var nine= document.getElementById('nine')
+	var sub= document.getElementById('sub')
+	var dot= document.getElementById('dot')
+	var zero= document.getElementById('zero')
+	var equal= document.getElementById('equal')
+	var add= document.getElementById('add')
+	var result= document.getElementById('result')
+	one.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 1
+		}
+		else{
+			result.value= result.value+1
+		}
+	}
+	two.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 2
+		}
+		else{
+			result.value= result.value+2
+		}
+	}
+	three.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 3
+		}
+		else{
+			result.value= result.value+3
+		}
+	}
+	four.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 4
+		}
+		else{
+			result.value= result.value+4
+		}
+	}
+	five.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 5
+		}
+		else{
+			result.value= result.value+5
+		}
+	}
+	six.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 6
+		}
+		else{
+			result.value= result.value+6
+		}
+	}
+	seven.onclick = function () {
+		
+		if (result.value== 0|| isNaN(result.value)) {
+			result.value= 7
+		}
+		else{
+			result.value= result.value+7
+		}
+	}
+	eight.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 8
+		}
+		else{
+			result.value= result.value+8
+		}
+	}
+	nine.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 9
+		}
+		else{
+			result.value= result.value+9
+		}
+	}
+	zero.onclick = function () {
+		
+		if (result.value== 0 || isNaN(result.value)) {
+			result.value= 0
+		}
+		else{
+			result.value= result.value+0
+		}
+	}
+	clear.onclick= function () {
+		result.value= 0
+	}
+	del.onclick= function () {
+		result.value= result.value.slice(0,-1)
+	}
+	mod.onclick= function () {
+		if (isNaN(result.value)) {
+			result.value="syntax error"
+		}
+		else
+		{
+			firstValue= result.value
+			result.value= "%"
+			sign= "%"
+		}
+	}
+mul.onclick= function () {
+		if (isNaN(result.value)) {
+			result.value="syntax error"
+		}
+		else
+		{
+			firstValue= result.value
+			result.value= "*"
+			sign= "*"
+		}
+	}
+	div.onclick= function () {
+		if (isNaN(result.value)) {
+			result.value="syntax error"
+		}
+		else
+		{
+			firstValue=result.value
+			result.value= "/"
+			sign="/"
+		}
+	}
+	sub.onclick= function () {
+		if (isNaN(result.value)) {
+			result.value="syntax error"
+		}
+		else
+		{
+			firstValue=result.value
+			result.value= "-"
+			sign="-"
+		}
+	}
+	add.onclick= function () {
+		if (isNaN(result.value)) {
+			result.value="syntax error"
+		}
+		else
+		{
+			firstValue=result.value
+			result.value= "+"
+			sign="+"
+		}
+	}
+	dot.onclick= function () {
+		if(isNaN(result.value)){
+			result.value="syntax error"
+		}
+		else{
+			result.value=result.value +"."
+		}
+	}
+equal.onclick=function () {
+       if(sign == "%"){
+       	result.value=firstValue%result.value
+       }
+       if(sign == "*"){
+       	result.value=firstValue*result.value
+       }
+       if(sign == "/"){
+       	result.value=firstValue/result.value
+       }
+       if(sign == "-"){
+       	result.value=firstValue-result.value
+       }
+       if(sign == "+"){
+       	result.value=Number(firstValue)+Number(result.value)
+       }
+}
+</script>
+
+</body>
+</html>

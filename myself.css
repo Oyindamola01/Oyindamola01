@@ -1,0 +1,59 @@
+form{
+			width: 40%;
+			margin: auto;
+			background: white;
+			padding: 10px;
+			box-sizing: border-box;
+			margin-top: 30px;
+
+		}
+
+		input{
+			padding: 7px;
+			width: 85%;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-top: 10px;
+			margin-right: 8px;
+			border:;
+
+		}
+		#container{
+			background: #f1f1f1;
+			width: 100%;
+			padding: 3px;
+			border-radius: 5px;
+			margin-left: -2px;
+					}
+		h4{
+			text-align: center;
+			color: steelblue;
+			font-style: italic;
+			font-family:initial;
+		}
+		#me{
+			background: white;
+			padding: 6px;
+			margin-top: 8px;
+			margin-bottom: 10px;
+			width: 40%;
+			margin: auto;
+			border:2px dashed steelblue;
+		}
+		#check{
+			width: 90%;
+			padding: 5px;
+			border-radius: 9px;
+			background:grey;
+			border:1px solid steelblue;		}
+			 #check:hover{
+			 	background: steelblue;
+			 }
+		.response{
+			color: green;
+			font-family: monospace;
+			font-size: 12px;
+			display: block;
+			margin-top: 10px;
+			margin-left: 5px
+		}

@@ -65,13 +65,13 @@ form{
 			margin-top: 10px;
 			margin-left: 5px
 		}
-@media  screen and (max-width:800px) {
+		@media  screen and (max-width:800px) {
 			*{
 				box-sizing: border-box;
 			}
   /* For tablets: */
   form{
-    width: 50%;
+    width: 80%;
     padding: 10px;
     margin: auto;
   }
@@ -83,10 +83,13 @@ form{
   
   
 }
-@media  screen and (max-width:300px) {
+@media  screen and ( max-width: 500px) {
   /* For mobile phones: */
-  form, input {
+  form {
     width: 100%;
   }
-}
+  input{
+  	width: 80%;
+  }
 
+}

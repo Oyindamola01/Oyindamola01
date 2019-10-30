@@ -23,40 +23,40 @@
 		var correct = 0;
 		
 		if(fullname.value != fname ){
-			response[0].innerText = fname
+			// response[0].innerText = fname
 		}else{
-			response[0].innerText = ""
+			// response[0].innerText = ""
 			correct++;
 		}
 
 		if(birthday.value != bday ){
-			response[1].innerText = bday
+			// response[1].innerText = bday
 		}else{
-			response[1].innerText = ""
+			// response[1].innerText = ""
 			correct++;
  		}
 
 
 		if(department.value != dept ){
-			response[2].innerText = dept
+			// response[2].innerText = dept
 		}else{
-			response[2].innerText = ""
+			// response[2].innerText = ""
 			correct++;
 		}
 
 
 		if(favouritefood.value != ffood ){
-			response[3].innerText = ffood
+			// response[3].innerText = ffood
 		}else{
-			response[3].innerText = ""
+			// response[3].innerText = ""
 			correct++;
 		}
 
 
 		if(favouritecolour.value != fcolor ){
-			response[4].innerText = fcolor
+			// response[4].innerText = fcolor
 		}else{ 
-			response[4].innerText = ""
+			// response[4].innerText = ""
 			correct++;
 		}
 
